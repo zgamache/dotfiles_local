@@ -11,3 +11,4 @@
 - link:
     ~/.dotfiles_local: ''
     ~/.gitconfig_local: gitconfig_local
+    ~/Library/Application Support/Code/User/settings.json: vscode/User/settings.json
