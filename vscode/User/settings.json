@@ -1,0 +1,5 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Solarized Dark"
+}
