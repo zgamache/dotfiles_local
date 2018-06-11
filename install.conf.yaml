@@ -10,4 +10,12 @@
 
 - link:
     ~/.dotfiles_local: ''
-    ~/.gitconfig_local: gitconfig_local
+    ~/.bash_env: bash_env
+
+- shell:
+  - [cp ~/.dotfiles/gitconfig . && cat git/gitconfig >> gitconfig, Appending to gitconfig]
+  - [rm ssh/config; for f in ssh/config.d/*; do echo "# $(basename $f)" >> ssh/config; cat $f >> ssh/config; echo "" >> ssh/config; done, Building ssh config]
+
+- link:
+    ~/.gitconfig: gitconfig
+    ~/.ssh/config: ssh/config
